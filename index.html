@@ -30,13 +30,14 @@
 
     <!-- Coin Counter -->
     <div class=" flex items-center bg-green-50 px-2 md:px-3 py-1 rounded-full">
-      <span class="text-black font-medium text-sm md:text-base">100</span>
+      <span class="coin-count text-black font-medium text-sm md:text-base">100</span>
       <img src="./assets/coin.png" alt="Coin" class="w-4 h-4 md:w-5 md:h-5 ml-1">
     </div>
 
     <!-- Copy (Span) -->
-    <div class="flex items-center bg-green-600 px-3 md:px-4 py-1 rounded-full">
-      <span class="text-white font-medium text-sm md:text-base">2 Copy</span>
+    <div class="copy-parent flex items-center bg-green-600 px-3 md:px-4 py-1 rounded-full">
+      <span class="text-white font-medium text-sm md:text-base mr-1"> 0 </span>
+      <p class="text-white font-medium text-sm md:text-base">Copy</p>
     </div>
   </div>
 </nav>
@@ -68,7 +69,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
       
       <!-- Card -->
-      <div class="w-full h-[360px] flex flex-col justify-between items-start p-8 rounded-[12px] shadow-md bg-white">
+      <div class="card-parent w-full h-[360px] flex flex-col justify-between items-start p-8 rounded-[12px] shadow-md bg-white">
         
         <!-- Logo + Heart Icon -->
         <div class="w-full flex justify-between items-start">
@@ -79,29 +80,29 @@
         <!-- Service Details -->
         <h2 class="text-lg font-bold mt-4">National Emergency Number</h2>
         <p class="text-sm text-gray-600">National Emergency</p>
-        <p class="text-3xl font-bold mt-4">999</p>
+        <p class="card-number text-3xl font-bold mt-4">999</p>
         <span class="mt-2 px-3 py-1 text-xs rounded-full bg-gray-100">All</span>
         
         <!-- Buttons -->
         <div class="flex w-full  mt-auto space-x-2">
-          <button class="flex-1 border rounded-md py-2 text-sm">Copy</button>
-          <button class="flex-1 bg-green-600 text-white rounded-md py-2 text-sm">Call</button>
+          <button class="copy-btn flex-1 border rounded-md py-2 text-sm">Copy</button>
+          <button class="call-btn flex-1 bg-green-600 text-white rounded-md py-2 text-sm">Call</button>
         </div>
       </div>
 
       <!-- card 2 -->
-        <div class="w-full h-[360px] flex flex-col justify-between items-start p-8 rounded-[12px] shadow-md bg-white">
+        <div class=" w-full h-[360px] flex flex-col justify-between items-start p-8 rounded-[12px] shadow-md bg-white">
         <div class="w-full flex justify-between items-start">
           <img src="./assets/police.png" alt="Service Icon" class="rounded-[16px] bg-[#dfefff] w-12 h-12">
           <i class="heart-icon cursor-pointer fa-regular fa-heart text-xl text-gray-500"></i>
         </div>
         <h2 class="text-lg font-bold mt-4">Police Helpline</h2>
         <p class="text-sm text-gray-600">Police</p>
-        <p class="text-3xl font-bold mt-4">999</p>
+        <p class="card-number text-3xl font-bold mt-4">999</p>
         <span class="mt-2 px-3 py-1 text-xs rounded-full bg-gray-100">Police</span>
         <div class="flex w-full mt-auto space-x-2">
-          <button class="flex-1 border rounded-md py-2 text-sm">Copy</button>
-          <button class="flex-1 bg-green-600 text-white rounded-md py-2 text-sm">Call</button>
+          <button class="copy-btn flex-1 border rounded-md py-2 text-sm">Copy</button>
+          <button class="call-btn flex-1 bg-green-600 text-white rounded-md py-2 text-sm">Call</button>
         </div>
       </div>
 
@@ -113,11 +114,11 @@
         </div>
         <h2 class="text-lg font-bold mt-4">Fire Service Number</h2>
         <p class="text-sm text-gray-600">fire Service</p>
-        <p class="text-3xl font-bold mt-4">999</p>
+        <p class="card-number text-3xl font-bold mt-4">999</p>
         <span class="mt-2 px-3 py-1 text-xs rounded-full bg-gray-100">Fire</span>
         <div class="flex w-full mt-auto space-x-2">
-          <button class="flex-1 border rounded-md py-2 text-sm">Copy</button>
-          <button class="flex-1 bg-green-600 text-white rounded-md py-2 text-sm">Call</button>
+          <button class="copy-btn flex-1 border rounded-md py-2 text-sm">Copy</button>
+          <button class="call-btn flex-1 bg-green-600 text-white rounded-md py-2 text-sm">Call</button>
         </div>
       </div>
 
@@ -129,11 +130,11 @@
         </div>
         <h2 class="text-lg font-bold mt-4">Ambulance Service</h2>
         <p class="text-sm text-gray-600">Ambulance</p>
-        <p class="text-3xl font-bold mt-4">1994-999999</p>
+        <p class="card-number text-3xl font-bold mt-4">1994-999999</p>
         <span class="mt-2 px-3 py-1 text-xs rounded-full bg-gray-100">Health</span>
         <div class="flex w-full mt-auto space-x-2">
-          <button class="flex-1 border rounded-md py-2 text-sm">Copy</button>
-          <button class="flex-1 bg-green-600 text-white rounded-md py-2 text-sm">Call</button>
+          <button class="copy-btn flex-1 border rounded-md py-2 text-sm">Copy</button>
+          <button class="call-btn flex-1 bg-green-600 text-white rounded-md py-2 text-sm">Call</button>
         </div>
       </div>
 
@@ -145,11 +146,11 @@
         </div>
         <h2 class="text-lg font-bold mt-4">Women & Child Helpline</h2>
         <p class="text-sm text-gray-600">Women & Child Helpline</p>
-        <p class="text-3xl font-bold mt-4">109</p>
+        <p class="card-number text-3xl font-bold mt-4">109</p>
         <span class="mt-2 px-3 py-1 text-xs rounded-full bg-gray-100">Help</span>
         <div class="flex w-full mt-auto space-x-2">
-          <button class="flex-1 border rounded-md py-2 text-sm">Copy</button>
-          <button class="flex-1 bg-green-600 text-white rounded-md py-2 text-sm">Call</button>
+          <button class="copy-btn flex-1 border rounded-md py-2 text-sm">Copy</button>
+          <button class="call-btn flex-1 bg-green-600 text-white rounded-md py-2 text-sm">Call</button>
         </div>
       </div>
 
@@ -161,11 +162,11 @@
         </div>
         <h2 class="text-lg font-bold mt-4">Anti-Corruption Helpline</h2>
         <p class="text-sm text-gray-600">Anti-Corruption </p>
-        <p class="text-3xl font-bold mt-4">106</p>
+        <p class="card-number text-3xl font-bold mt-4">106</p>
         <span class="mt-2 px-3 py-1 text-xs rounded-full bg-gray-100">Government</span>
         <div class="flex w-full mt-auto space-x-2">
-          <button class="flex-1 border rounded-md py-2 text-sm">Copy</button>
-          <button class="flex-1 bg-green-600 text-white rounded-md py-2 text-sm">Call</button>
+          <button class="copy-btn flex-1 border rounded-md py-2 text-sm">Copy</button>
+          <button class="call-btn flex-1 bg-green-600 text-white rounded-md py-2 text-sm">Call</button>
         </div>
       </div>
     
@@ -178,11 +179,11 @@
         </div>
         <h2 class="text-lg font-bold mt-4">Electricity Helpline</h2>
         <p class="text-sm text-gray-600">Electricity Outage</p>
-        <p class="text-3xl font-bold mt-4">16216</p>
+        <p class="card-number text-3xl font-bold mt-4">16216</p>
         <span class="mt-2 px-3 py-1 text-xs rounded-full bg-gray-100">Electricity</span>
         <div class="flex w-full mt-auto space-x-2">
-          <button class="flex-1 border rounded-md py-2 text-sm">Copy</button>
-          <button class="flex-1 bg-green-600 text-white rounded-md py-2 text-sm">Call</button>
+          <button class="copy-btn flex-1 border rounded-md py-2 text-sm">Copy</button>
+          <button class="call-btn flex-1 bg-green-600 text-white rounded-md py-2 text-sm">Call</button>
         </div>
       </div>
 
@@ -193,12 +194,12 @@
           <i class="heart-icon cursor-pointer fa-regular fa-heart text-xl text-gray-500"></i>
         </div>
         <h2 class="text-lg font-bold mt-4">Brac Helpline</h2>
-        <p class="text-sm text-gray-600">Police</p>
-        <p class="text-3xl font-bold mt-4">16445</p>
+        <p class="service-name text-sm text-gray-600">Bracservice-name </p>
+        <p class="card-number text-3xl font-bold mt-4">16445</p>
         <span class="mt-2 px-3 py-1 text-xs rounded-full bg-gray-100">NGO</span>
         <div class="flex w-full mt-auto space-x-2">
-          <button class="flex-1 border rounded-md py-2 text-sm">Copy</button>
-          <button class="flex-1 bg-green-600 text-white rounded-md py-2 text-sm">Call</button>
+          <button class="copy-btn flex-1 border rounded-md py-2 text-sm">Copy</button>
+          <button class="call-btn flex-1 bg-green-600 text-white rounded-md py-2 text-sm">Call</button>
         </div>
       </div>
 
@@ -209,12 +210,12 @@
           <i class="heart-icon cursor-pointer fa-regular fa-heart text-xl text-gray-500"></i>
         </div>
         <h2 class="text-lg font-bold mt-4">Bangladesh-Railway Helpline</h2>
-        <p class="text-sm text-gray-600">Bangladesh-Railway</p>
-        <p class="text-3xl font-bold mt-4">163</p>
+        <p class="service-name text-sm text-gray-600">Bangladesh-Railway</p>
+        <p class="card-number text-3xl font-bold mt-4">163</p>
         <span class="mt-2 px-3 py-1 text-xs rounded-full bg-gray-100">Travel</span>
         <div class="flex w-full mt-auto space-x-2">
-          <button class="flex-1 border rounded-md py-2 text-sm">Copy</button>
-          <button class="flex-1 bg-green-600 text-white rounded-md py-2 text-sm">Call</button>
+          <button class="copy-btn flex-1 border rounded-md py-2 text-sm">Copy</button>
+          <button class="call-btn flex-1 bg-green-600 text-white rounded-md py-2 text-sm">Call</button>
         </div>
       </div>
 
@@ -225,7 +226,7 @@
     </div>
 
     <!-- Right: History Column -->
-   <aside class="w-full sm:max-w-md flex flex-col justify-start items-start p-4 sm:p-6 rounded-[12px] shadow-md bg-white">
+   <aside class="call-history w-full sm:max-w-md flex flex-col justify-start items-start p-4 sm:p-6 rounded-[12px] shadow-md bg-white">
   <!-- Header -->
   <div class="flex justify-between items-center w-full mb-4">
     <div class="flex justify-center items-center gap-2">
